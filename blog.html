@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — TEST</title>
+  <meta name="description" content="Articles on technology and innovation from TEST." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&family=Chicle&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nokora:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">TEST</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="user-chip">
+          <span class="avatar">U</span><span class="uname">User</span>
+          <button class="logout" onclick="logout()" title="Log out"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        <button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Blog</div>
+      <h1>The <span class="text-gradient">Blog</span></h1>
+      <p>Writing about technology, innovation, and the craft of building software. Sign in to bookmark posts.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+
+        <article class="post-card" onclick="openPost(0)">
+          <div class="post-thumb t1"><i class="fa-solid fa-robot"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Artificial Intelligence</span><span>Aug 10, 2026</span></div>
+            <h3>The Age of AI Agents</h3>
+            <p>Autonomous agents are moving from demos to daily tools. We look at what actually works, what doesn't, and where things are heading.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="openPost(1)">
+          <div class="post-thumb t3"><i class="fa-solid fa-terminal"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Web Development</span><span>Aug 04, 2026</span></div>
+            <h3>Building with the Modern Web</h3>
+            <p>Why the web platform keeps winning — and how to choose tools without getting swept up in every hype cycle.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="openPost(2)">
+          <div class="post-thumb t5"><i class="fa-solid fa-satellite-dish"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Connectivity</span><span>Jul 28, 2026</span></div>
+            <h3>What's Next for Connectivity</h3>
+            <p>Satellite internet, 6G, and mesh networks — how the next billion people are coming online.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="openPost(3)">
+          <div class="post-thumb t2"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Security</span><span>Jul 20, 2026</span></div>
+            <h3>Privacy by Default</h3>
+            <p>Encryption, zero-trust, and why privacy should be the starting point — not a feature added later.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="openPost(4)">
+          <div class="post-thumb t6"><i class="fa-solid fa-code-branch"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Open Source</span><span>Jul 12, 2026</span></div>
+            <h3>Why I Build in Public</h3>
+            <p>A case for sharing work early, learning out loud, and letting the community make things better.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="post-card" onclick="openPost(5)">
+          <div class="post-thumb t4"><i class="fa-solid fa-microchip"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Hardware</span><span>Jul 02, 2026</span></div>
+            <h3>The Custom Silicon Era</h3>
+            <p>From AI accelerators to RISC-V, the chip landscape is being redrawn — and software is along for the ride.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POST MODAL -->
+  <div class="modal-overlay" id="post-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal(this)"><i class="fa-solid fa-xmark"></i></button>
+      <div id="post-content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">TEST</span>
+          <p>A space for technology, innovation, and the people building tomorrow. Created by Proxima.</p>
+          <div class="footer-social">
+            <a href="https://github.com/proxima27" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="blog.html">Artificial Intelligence</a></li>
+            <li><a href="blog.html">Web Development</a></li>
+            <li><a href="blog.html">Open Source</a></li>
+            <li><a href="blog.html">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="forgot.html">Forgot Password</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 TEST &middot; Built with <i class="fa-solid fa-heart" style="color:var(--accent)"></i> by <span class="hand">Proxima</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    const posts = [
+      {
+        title: "The Age of AI Agents",
+        cat: "Artificial Intelligence", date: "Aug 10, 2026",
+        body: `<p>For years, AI lived inside chat windows. Ask a question, get an answer. Today, a new kind of system is emerging: the <strong>agent</strong> — software that doesn't just respond, but plans, acts, and follows through.</p>
+        <p>The most useful agents today are narrow. They read your email, draft replies, schedule meetings, or triage code reviews. They fail gracefully, ask for confirmation, and stay inside a sandbox. That humility is exactly why they work.</p>
+        <p>The road ahead isn't about superintelligence — it's about <em>reliability</em>. Better tool use, better memory, and better ways for humans to stay in the loop. The winners will be the teams that treat agents as collaborators, not oracles.</p>`
+      },
+      {
+        title: "Building with the Modern Web",
+        cat: "Web Development", date: "Aug 04, 2026",
+        body: `<p>The web platform is in its best shape ever. CSS has grid, container queries, and nesting. JavaScript has evolved into a genuinely pleasant language. Browsers are fast, evergreen, and remarkably consistent.</p>
+        <p>Yet the tooling around it grows more complex by the week. The trick isn't to chase every framework — it's to understand the platform underneath. Learn the DOM, the cascade, and the network layer first. Frameworks come and go; the web stays.</p>
+        <p>Start small. Ship something. The best way to learn the modern web is to build with it.</p>`
+      },
+      {
+        title: "What's Next for Connectivity",
+        cat: "Connectivity", date: "Jul 28, 2026",
+        body: `<p>More than a third of the world still lacks reliable internet. That's changing — fast. Low-earth-orbit satellite constellations now cover regions that cables never reached, while 5G (and soon 6G) are reshaping cities.</p>
+        <p>But connectivity is about more than speed. It's about latency, reliability, and cost. Mesh networks, eSIMs, and community-owned infrastructure are quietly expanding access from the ground up.</p>
+        <p>The next billion users won't come online the way the last billion did — and that's an enormous opportunity for builders.</p>`
+      },
+      {
+        title: "Privacy by Default",
+        cat: "Security", date: "Jul 20, 2026",
+        body: `<p>Privacy isn't a feature you bolt on at launch. It's an assumption baked into every layer of a system — from how data is collected to how long it's kept.</p>
+        <p>End-to-end encryption, zero-trust networks, and minimal data collection are no longer niche concerns. Users expect them, and regulators increasingly require them.</p>
+        <p>The best privacy design is invisible: users shouldn't have to be experts to stay safe online.</p>`
+      },
+      {
+        title: "Why I Build in Public",
+        cat: "Open Source", date: "Jul 12, 2026",
+        body: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolorem recusandae dicta magni magnam laborum praesentium architecto iusto unde corrupti?</p>`
+      },
+      {
+        title: "The Custom Silicon Era",
+        cat: "Hardware", date: "Jul 02, 2026",
+        body: `<p>Software used to eat the world. Now, increasingly, the world is eating custom chips. AI accelerators, RISC-V cores, and purpose-built silicon are reshaping what software can afford to do.</p>
+        <p>The implications are huge. Cheaper inference means AI moves from the cloud to the edge. Open instruction sets mean new players can design chips without licensing legacy architectures.</p>
+        <p>For developers, the message is simple: the hardware beneath your code is changing faster than it has in decades. Pay attention.</p>`
+      }
+    ];
+
+    function openPost(i) {
+      const p = posts[i];
+      document.getElementById('post-content').innerHTML = `
+        <div class="post-meta" style="margin-bottom:12px;">
+          <span style="color:var(--primary);font-weight:600;">${p.cat}</span><span>${p.date}</span>
+        </div>
+        <h2 style="margin-bottom:18px;">${p.title}</h2>
+        <div style="color:var(--text-dim);display:flex;flex-direction:column;gap:14px;">${p.body}</div>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);font-size:.88rem;color:var(--text-mute);">
+          <i class="fa-solid fa-user-astronaut" style="color:var(--primary)"></i> Written by <strong style="color:var(--text)">Proxima</strong> &middot; <a href="https://github.com/proxima27" target="_blank" rel="noopener">@proxima27</a>
+        </div>`;
+      openModal('post-modal');
+    }
+  </script>
+</body>
+</html>

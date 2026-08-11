@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — TEST</title>
+  <meta name="description" content="About Proxima, the creator of TEST." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&family=Chicle&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nokora:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">TEST</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="user-chip">
+          <span class="avatar">U</span><span class="uname">User</span>
+          <button class="logout" onclick="logout()" title="Log out"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        <button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
+      <h1>About <span class="text-gradient">TEST</span></h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, soluta.</p>
+    </div>
+  </header>
+
+  <!-- PROXIMA -->
+  <section class="section">
+    <div class="container">
+      <div class="about-hero">
+        <aside class="profile-card">
+          <div class="profile-avatar">P</div>
+          <h3>Proxima</h3>
+          <div class="role">Developer &middot; Builder</div>
+          <p class="bio">
+            Hi, I'm Proxima — a developer passionate about technology, open source, and building
+            things for the web.
+          </p>
+          <div class="socials">
+            <a href="https://github.com/proxima27" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hello@test.dev" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </aside>
+
+        <div class="about-text">
+          <h2>Hey, I'm <span class="text-gradient">Proxima</span> 👋</h2>
+          <p>
+           I'm a developer and technology enthusiast who loves turning ideas into real, working software. 
+           From small scripts that automate everyday tasks to full-scale web applications, 
+           I enjoy building things that solve problems and make a difference.
+          </p>
+          <p>
+            I believe the best way to learn is by building, experimenting, and sharing the journey. 
+            You'll find my projects on GitHub, where I explore new technologies, 
+            and share the projects.
+          </p>
+
+          <div class="skill-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VALUES -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">What TEST stands for</span>
+        <h2>Built on a few simple <span class="text-gradient">ideas</span></h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+          <h3>Learn in Public</h3>
+          <p>Share what you learn, even when it's messy. Knowledge compounds when it's shared freely.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3>Build Openly</h3>
+          <p>Open source is how the world moves forward. We champion transparent, collaborative work.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Stay Curious</h3>
+          <p>Technology changes fast. The goal isn't to know everything — it's to keep asking why.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:760px;">
+      <div class="section-head">
+        <span class="tag">Journey</span>
+        <h2>The road so <span class="text-gradient">far</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-flag"></i></div>
+          <div>
+            <div class="when">2026</div>
+            <h4>Launched TEST</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quis dolorem omnis.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <div class="when">2025</div>
+            <h4>Deeper into Web</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, et.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <div class="when">2024</div>
+            <h4>Joined the Open Source World</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, maxime!</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"><i class="fa-solid fa-terminal"></i></div>
+          <div>
+            <div class="when">The beginning</div>
+            <h4>First Lines of Code</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, maxime?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter">
+        <h2>Let's <span class="text-gradient">connect</span></h2>
+        <p>Check out my work on GitHub — Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="hero-cta" style="margin-top:24px;">
+          <a href="https://github.com/proxima27" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> Visit my GitHub
+          </a>
+          <a href="contact.html" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">TEST</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Created by Proxima.</p>
+          <div class="footer-social">
+            <a href="https://github.com/proxima27" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="blog.html">Artificial Intelligence</a></li>
+            <li><a href="blog.html">Web Development</a></li>
+            <li><a href="blog.html">Open Source</a></li>
+            <li><a href="blog.html">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="forgot.html">Forgot Password</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 TEST &middot; Built with <i class="fa-solid fa-heart" style="color:var(--accent)"></i> by <span class="hand">Proxima</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

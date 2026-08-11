@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEST — Technology & Innovation</title>
+  <meta name="description" content="TEST — exploring the frontier of technology and innovation." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&family=Chicle&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nokora:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">TEST</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="user-chip">
+          <span class="avatar">U</span>
+          <span class="uname">User</span>
+          <button class="logout" onclick="logout()" title="Log out"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+        </a>
+        <button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <div class="container">
+      <span class="eyebrow"><span class="dot"></span> Technology &middot; Innovation &middot; The Future</span>
+      <h1>Engineering the <span class="text-gradient">Future</span>,<br />One Idea at a Time.</h1>
+      <p class="lead">
+        TEST is a space where curiosity meets code. We explore the technologies reshaping our world —
+        artificial intelligence, open source, web platforms, and the builders behind them.
+      </p>
+      <div class="hero-cta">
+        <a href="blog.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore the Blog</a>
+        <a href="about.html" class="btn btn-ghost"><i class="fa-solid fa-user-astronaut"></i> Meet Proxima</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">What We Cover</span>
+        <h2>Ideas at the edge of <span class="text-gradient">what's possible</span></h2>
+        <p>From machine learning to modern web engineering, we break down the trends that define the next decade.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Artificial Intelligence</h3>
+          <p>How large language models, agents, and generative AI are rewiring how we work, learn, and create.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h3>Open Source</h3>
+          <p>The communities, tools, and philosophies powering the most important software on the planet.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Hardware & Chips</h3>
+          <p>From custom silicon to quantum computing — the engines driving the next wave of compute.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>The Web Platform</h3>
+          <p>Frameworks, standards, and the evolving browser — what every developer should know today.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Cybersecurity</h3>
+          <p>Zero trust, privacy by design, and defending the systems the whole world relies on.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Climate Tech</h3>
+          <p>Technology as a force for planetary scale — energy, batteries, and sustainable engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><div class="num" data-count="120">0</div><div class="label">Articles Published</div></div>
+        <div class="stat"><div class="num" data-count="48">0</div><div class="label">Open Projects</div></div>
+        <div class="stat"><div class="num" data-count="25">0</div><div class="label">Technologies Covered</div></div>
+        <div class="stat"><div class="num" data-count="100">0</div><div class="label">% Curiosity Driven</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST POSTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">From the Blog</span>
+        <h2>Latest <span class="text-gradient">thoughts</span></h2>
+      </div>
+      <div class="blog-grid">
+        <a href="blog.html" class="post-card">
+          <div class="post-thumb t1"><i class="fa-solid fa-robot"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>AI</span><span>Aug 2026</span></div>
+            <h3>The Age of AI Agents</h3>
+            <p>Autonomous agents are moving from demos to daily tools. Here is what actually works.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="blog.html" class="post-card">
+          <div class="post-thumb t3"><i class="fa-solid fa-terminal"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Web Dev</span><span>Aug 2026</span></div>
+            <h3>Building with the Modern Web</h3>
+            <p>Why the platform keeps winning — and how to pick tools without the hype cycle.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="blog.html" class="post-card">
+          <div class="post-thumb t5"><i class="fa-solid fa-satellite-dish"></i></div>
+          <div class="post-body">
+            <div class="post-meta"><span>Innovation</span><span>Jul 2026</span></div>
+            <h3>What's Next for Connectivity</h3>
+            <p>Satellite internet, 6G, and the mesh — how the next billion get online.</p>
+            <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter">
+        <h2>Stay in the <span class="text-gradient">loop</span></h2>
+        <p>Get fresh insights on technology and innovation delivered to your inbox. No spam, ever.</p>
+        <form class="nl-form">
+          <input type="email" placeholder="you@example.com" required />
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">TEST</span>
+          <p>A space for technology, innovation, and the people building tomorrow. Created by Proxima.</p>
+          <div class="footer-social">
+            <a href="https://github.com/proxima27" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="blog.html">Artificial Intelligence</a></li>
+            <li><a href="blog.html">Web Development</a></li>
+            <li><a href="blog.html">Open Source</a></li>
+            <li><a href="blog.html">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="forgot.html">Forgot Password</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 TEST &middot; Built with <i class="fa-solid fa-heart" style="color:var(--accent)"></i> by <span class="hand">Proxima</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    // Simple count-up animation for stats
+    const counters = document.querySelectorAll('[data-count]');
+    const animate = el => {
+      const target = +el.dataset.count;
+      let n = 0;
+      const step = Math.max(1, Math.ceil(target / 50));
+      const tick = () => { n += step; if (n >= target) { el.textContent = target + (el.textContent.includes('%') ? '%' : '+'); } else { el.textContent = n; requestAnimationFrame(tick); } };
+      tick();
+    };
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animate(e.target); io.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    counters.forEach(c => io.observe(c));
+  </script>
+</body>
+</html>
