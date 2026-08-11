@@ -16,7 +16,7 @@ A modern multi-page website built with **HTML, CSS, and JavaScript only** (no fr
 
 ## How to run
 
-Just open `index.html` in your browser, **or** serve the folder:
+Just open `index.html` in your browser.
 
 
 ## Try the auth
